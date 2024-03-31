@@ -1,17 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Bubahova Radio </title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  </head>
-  <style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stacked Images with Music Player</title>
+<style>
     body {
-      background: #777777;
-      color: white;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
-  </style>
-  <body>
-    <img src="https://anlucas.neocities.org/lavalamp_blue.gif" alt="anim gif">
-    <audio controls src="https://listen.radioking.com/radio/613474/stream/675256">
-  </body>
+    #image-stack {
+        position: relative;
+    }
+    #image-stack img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    #image-stack img:first-child {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<div id="image-stack">
+    <img src="bubahcover.png" alt="Image 1">
+    <img src="bubaho2.png" alt="Image 2">
+    <img src="surrealbobah.png" alt="Image 3">
+    <!-- Add more images as needed -->
+</div>
+<audio controls>
+    <source src="dreamemulatortempled.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<script>
+    // JavaScript to rotate through images
+    window.onload = function() {
+        var images = document.querySelectorAll('#image-stack img');
+        var currentImageIndex = 0;
+        
+        function showNextImage() {
+            images[currentImageIndex].style.display = 'none';
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].style.display = 'block';
+        }
+        
+        setInterval(showNextImage, 5000); // Change image every 5 seconds
+    };
+</script>
+</body>
 </html>
+
