@@ -1,0 +1,13 @@
+
+      @font-face{
+        font-family: mononoki;
+        src: url(https://nightcity.neocities.org/fonts/mononoki-Regular.ttf);
+      }
+      body{
+        font-family: mononoki;
+        font-size: 1.3em;
+        height: 100%;
+        image-rendering: smooth;
+        line-height: 1.3em;
+      }
+    
