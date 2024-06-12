@@ -5,22 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>bubahova gallery</title>
 <style>
+    @font-face { font-family: Boxcutter; src: url('boxcutter-bold-webfont.ttf'); } 
     body {
-        margin: 0;
+        margin: 1000;
         padding: 0;
-        background-color: black;
+        background-color: black;      
         overflow-y: scroll; /* Enable vertical scrolling */
+    }
+    p {
+        color: #ccffff;
+        text-decoration: black underline;
+
     }
     #image-stack {
         display: flex;
         flex-direction: column; /* Stack images vertically */
         align-items: center;
-        padding-top: 20px; /* Adjusted padding */
+        padding-top: 80px; /* Adjusted padding */
     }
     #image-stack img {
         max-width: 40%; /* Adjusted width */
         max-height: 40%; /* Adjusted height */
-        margin-bottom: 60px; /* Adjusted margin */
+        margin-bottom: 70px; /* Adjusted margin */
     }
     #audio-player {
         position: fixed; /* Fixed positioning */
@@ -31,14 +37,14 @@
 </head>
 <body>
 <a class="music-link" href="other.html" style="display: flex;">
-    <p style="margin: 0; font-size: 2.35916rem; font-family: Julius Sans One;">b</p>
-    <p style="margin: 0; font-size: 1.56443rem; font-family: Numans;">u</p>
-    <p style="margin: 0; font-size: 2.16536rem; font-family: IM Fell Double Pica;">b</p>
-    <p style="margin: 0; font-size: 1.79594rem; font-family: Montaga;">a</p>
-    <p style="margin: 0; font-size: 1.61768rem; font-family: Audiowide;">h</p>
-    <p style="margin: 0; font-size: 2.40086rem; font-family: Rubik Mono One;">o</p>
-    <p style="margin: 0; font-size: 2.16699rem; font-family: Spinnaker;">v</p>
-    <p style="margin: 0; font-size: 1.5572rem; font-family: Mystery Quest;">a</p>
+    <p style="margin: 0; font-size: 2.35916rem; font-family: Boxcutter;">b</p>
+    <p style="margin: 0; font-size: 1.56443rem; font-family: Boxcutter;">u</p>
+    <p style="margin: 0; font-size: 2.16536rem; font-family: Boxcutter;">b</p>
+    <p style="margin: 0; font-size: 1.79594rem; font-family: Boxcutter;">a</p>
+    <p style="margin: 0; font-size: 1.61768rem; font-family: Boxcutter;">h</p>
+    <p style="margin: 0; font-size: 2.40086rem; font-family: Boxcutter;">o</p>
+    <p style="margin: 0; font-size: 2.16699rem; font-family: Boxcutter;">v</p>
+    <p style="margin: 0; font-size: 1.5572rem; font-family: Boxcutter;">a</p>
 </a>
 <div id="audio-player">
     <audio controls autoplay>
