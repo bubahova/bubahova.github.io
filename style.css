@@ -1,0 +1,31 @@
+
+			body {
+				background-color: #1c2836;
+				background-image: url("deco/hlwater.jpg");
+				margin-top: 20px;
+				letter-spacing: 3px;
+				color: #00ccff;
+				max-width: 700px;
+				margin: auto;
+				margin-top: 20px;
+			}
+			img {
+				height: 30%;
+				width: auto;
+			}
+			p, h1 {
+				text-align: center;
+			}
+			a, a:visited {
+				color: inherit;
+				z-index: 4;
+				position: relative;
+			}
+            a:hover {
+                color: lightslategray;
+            }
+    		#audio-player {
+        	position: fixed; /* Fixed positioning */
+        	top: 10px;
+        	right: 10px;
+    		}

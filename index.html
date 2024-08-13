@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bubahova gallery</title>
+<style>
+    body {
+        margin: 1000;
+        padding: 0;
+        background-color: black;      
+        overflow-y: scroll; /* Enable vertical scrolling */
+    }
+    p {
+        color: #00ccff;
+        text-decoration: black underline;
+
+    }
+    #image-stack {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        padding-top: 80px; /* Adjusted padding */
+    }
+    #image-stack img {
+        max-width: 40%; /* Adjusted width */
+        max-height: 40%; /* Adjusted height */
+        margin-bottom: 70px; /* Adjusted margin */
+    }
+    #audio-player {
+        position: fixed; /* Fixed positioning */
+        top: 10px;
+        right: 10px;
+    }
+</style>
+</head>
+<body>
+<a class="music-link" href="menu.html" style="display: flex;">
+    <p style="margin: 0; font-size: 3rem;">b</p>
+    <p style="margin: 0; font-size: 2rem;">u</p>
+    <p style="margin: 0; font-size: 3rem;">b</p>
+    <p style="margin: 0; font-size: 2rem;">a</p>
+    <p style="margin: 0; font-size: 2rem;">h</p>
+    <p style="margin: 0; font-size: 3rem;">o</p>
+    <p style="margin: 0; font-size: 3rem;">v</p>
+    <p style="margin: 0; font-size: 2rem;">a</p>
+</a>
+<div id="audio-player">
+    <audio controls autoplay>
+        <source src="deco/dreamemulatortempled.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<div id="image-stack">
+    <img src="bubah/bubaho2.png" alt="Bubaho 2">
+    <img src="bubah/surrealbobah.png" alt="Surreal Bobah">
+    <img src="bubah/bubahcover.png" alt="Bubah Cover">
+    <img src="bubah/olki.png" alt="olki">
+    <img src="bubah/bubaho3.png" alt="bubaho3">
+    <img src="bubah/bubaho4.png" alt="olki">
+
+    <!-- Add more images as needed -->
+</div>
+</body>
+</html>
