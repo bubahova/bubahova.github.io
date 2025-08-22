@@ -21,9 +21,23 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start; 
+      justify-content: center;
+      align-items: flex-start;
+    }
+.content-wrapper {
+      display: flex;           
+      align-items: center;     
+      gap: 30px;               
+      margin-top: 150px;       
     }
 
+    
+    .gif-container img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px; 
+      box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    
     .radio-container {
       text-align: center;
       margin-top: 300px; 
@@ -60,15 +74,19 @@
 </head>
 <body>
 
-  <div class="radio-container">
-    <h1></h1>
-    <audio controls autoplay>
-      <source src="https://stream.zeno.fm/a7s9wqrq7iitv" type="audio/mpeg">
-     
-    </audio>
-  </div>
+  <div class="content-wrapper">
+    <div class="gif-container">
+      <img src="decos/music.gif" alt="Müzik GIF" />
+    </div>
 
-  
+    <div class="radio-container">
+      <h1></h1>
+      <audio controls autoplay>
+        <source src="https://stream.zeno.fm/a7s9wqrq7iitv" type="audio/mpeg" />
+       
+      </audio>
+    </div>
+  </div>
 
 </body>
 </html>
