@@ -1,54 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bubahova Radio</title>
-<link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png" type="image/x-icon">   
-    <style>
-    body {
-        margin: 1000;
-        padding: 0;
-        background-color: black;      
-        overflow-y: scroll; /* Enable vertical scrolling */
-    }
-    p {
-        color: #00ccff;
-        text-decoration: black underline;
-
-    }
-    #image-stack {
-        display: flex;
-        flex-direction: column; /* Stack images vertically */
-        align-items: center;
-        padding-top: 80px; /* Adjusted padding */
-    }
-    #image-stack img {
-        max-width: 40%; /* Adjusted width */
-        max-height: 40%; /* Adjusted height */
-        margin-bottom: 70px; /* Adjusted margin */
-    }
-   <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubahova Radio</title>
+  <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+
   
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    
     body {
       margin: 0;
       padding: 0;
-      height: 100vh; 
-      display: flex; 
-      justify-content: center; 
-      align-items: center;    
-      background-color: #1e1e2f; 
+      height: 100vh;
+      background-color: #1e1e2f;
       font-family: 'Inter', sans-serif;
       color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; 
     }
 
-   
     .radio-container {
       text-align: center;
+      margin-top: 150px; 
     }
 
     h1 {
@@ -60,24 +38,38 @@
     audio {
       width: 300px;
     }
+
+   
+    #image-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    #image-stack img {
+      max-width: 40%;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: #00ccff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <div class="radio-container">
-    <h1>o</h1>
+    <h1>🎧 Bubahova Radio</h1>
     <audio controls autoplay>
       <source src="https://stream.zeno.fm/a7s9wqrq7iitv" type="audio/mpeg">
      
     </audio>
   </div>
 
-</body>
-</html>
-    
+  
 
-   
-</div>
 </body>
 </html>
 
