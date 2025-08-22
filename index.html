@@ -29,42 +29,58 @@
         max-height: 40%; /* Adjusted height */
         margin-bottom: 70px; /* Adjusted margin */
     }
-   <style>
+   <head>
+  <meta charset="UTF-8">
+  
+  <style>
+    
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: #ff0000;
+      height: 100vh; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center;    
+      background-color: #1e1e2f; 
       font-family: 'Inter', sans-serif;
       color: #ffffff;
     }
 
+   
+    .radio-container {
+      text-align: center;
+    }
+
     h1 {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font-size: 28px;
       font-weight: 600;
     }
 
     audio {
-      width: 320px;
+      width: 300px;
     }
   </style>
 </head>
 <body>
-  <h1></h1>
 
-  <audio controls autoplay>
-    <source src="https://stream.zeno.fm/a7s9wqrq7iitv" type="audio/mpeg">
+  <div class="radio-container">
+    <h1>o</h1>
+    <audio controls autoplay>
+      <source src="https://stream.zeno.fm/a7s9wqrq7iitv" type="audio/mpeg">
+      Tarayıcınız bu ses öğesini desteklemiyor.
+    </audio>
+  </div>
+
+</body>
+</html>
     
 
    
 </div>
 </body>
 </html>
+
 
 
 
